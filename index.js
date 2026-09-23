@@ -204,12 +204,7 @@ await import(tmpBot);
 
 
 
-// WOLFTECH KEEP-ALIVE - Add at bottom of index.js
 const express = require('express');
 const app = express();
-app.get('/', (req, res) => {
-  res.send('🐺 WOLFTECH ALIVE - 0746391559');
-});
-app.listen(process.env.PORT || 10000, () => {
-  console.log('keep-alive on port ' + (process.env.PORT || 10000));
-});
+app.get('/', (req,res)=>res.send('🐺 WOLFTECH ALIVE - 0746391559'));
+app.listen(process.env.PORT||10000, ()=>console.log('WOLFTECH ALIVE'));
